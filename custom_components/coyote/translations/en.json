@@ -1,0 +1,43 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "This Coyote is already configured.",
+      "no_devices_found": "No connectable Coyote V2 or V3 devices were found.",
+      "not_supported": "This Bluetooth device is not a supported connectable Coyote."
+    },
+    "error": {
+      "cannot_connect": "The selected device is no longer available."
+    },
+    "step": {
+      "bluetooth_confirm": {
+        "description": "Set up this Coyote? Output remains disabled and both desired intensities start at zero.",
+        "title": "Set up DG-LAB Coyote"
+      },
+      "user": {
+        "data": {"address": "Device"},
+        "description": "Select a discovered Coyote. A connectable local Bluetooth adapter or Bluetooth proxy is required.",
+        "title": "Select DG-LAB Coyote"
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {"connected": {"name": "Connected"}},
+    "number": {
+      "frequency": {"name": "Channel {channel} frequency"},
+      "intensity": {"name": "Channel {channel} intensity"},
+      "waveform_strength": {"name": "Channel {channel} waveform strength"}
+    },
+    "select": {
+      "pattern": {
+        "name": "Channel {channel} pattern",
+        "state": {"breathe": "Breathe", "pulse": "Pulse", "steady": "Steady", "wave": "Wave"}
+      }
+    },
+    "sensor": {
+      "actual_intensity": {"name": "Channel {channel} actual intensity"},
+      "battery": {"name": "Battery"}
+    },
+    "switch": {"output": {"name": "Output"}}
+  },
+  "title": "DG-LAB Coyote"
+}

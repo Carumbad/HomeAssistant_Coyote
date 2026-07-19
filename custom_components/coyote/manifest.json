@@ -1,0 +1,23 @@
+{
+  "bluetooth": [
+    {
+      "connectable": true,
+      "local_name": "47L121*"
+    },
+    {
+      "connectable": true,
+      "local_name": "D-LAB*"
+    }
+  ],
+  "codeowners": ["@Carumbad"],
+  "config_flow": true,
+  "dependencies": ["bluetooth_adapters"],
+  "documentation": "https://github.com/Carumbad/HomeAssistant-Coyote",
+  "domain": "coyote",
+  "integration_type": "device",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/Carumbad/HomeAssistant-Coyote/issues",
+  "name": "DG-LAB Coyote",
+  "requirements": ["bleak-retry-connector>=4.0.0"],
+  "version": "0.1.0"
+}
